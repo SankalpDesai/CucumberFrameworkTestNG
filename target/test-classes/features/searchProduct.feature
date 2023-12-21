@@ -11,3 +11,4 @@ And validate product name in offer page matched with landing page
 Examples:
 |Name|
 |Tom|
+|Beet|
