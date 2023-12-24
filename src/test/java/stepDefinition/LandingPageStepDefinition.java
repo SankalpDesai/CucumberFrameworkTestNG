@@ -34,25 +34,24 @@ public class LandingPageStepDefinition {
 	@When("^user searched with shortname (.+) and extracted actual name of product$")
 	public void user_searched_with_shortname_and_extracted_actual_name_of_product(String shortName) throws InterruptedException {
 		
-		//LandingPage landingPage= new LandingPage(textContextSetup.driver);
 		landingPage=textContextSetup.pageObjectManager.getLandingPageObject();
 		landingPage.SearchItem(shortName);
-		
-		//textContextSetup.driver.findElement(By.className("search-keyword")).sendKeys(shortName);
 	    Thread.sleep(2000);
 	    textContextSetup.productPageProductName= landingPage.getProductName();
 	    
 	}
-	
-	/*@When("Added {string} items of the selected product to cart")
-	public void added_items_selected_products_to_cart(String productQuantity) throws NumberFormatException, InterruptedException {
-		landingPage.addProductToCart(Integer.parseInt(productQuantity));
-	}*/
+
 	
 	@When("Added {string} items of the selected product to cart")
 	public void added_items_product(String quantity) {
 		landingPage.incrementQuantity(Integer.parseInt(quantity));
 		landingPage.addToCart();
+	}
+	
+	@When("user click on top deals link")
+	public void clickOnTopDeals() {
+		landingPage.selectTopDealsPage();
+		textContextSetup.genericUtils.switchToChildWindow();
 	}
 	
 	

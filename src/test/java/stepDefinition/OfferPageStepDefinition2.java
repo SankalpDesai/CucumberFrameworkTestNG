@@ -25,22 +25,20 @@ public class OfferPageStepDefinition2 {
 	
 	public OfferPageStepDefinition2(TextContextSetup textContextSetup) {
 		this.textContextSetup=textContextSetup;
+		this.offerPage=textContextSetup.pageObjectManager.getOfferPageObject();
 	}
 	
 	@Then("^user searched for (.+) same shortname in offers page$")
 	public void user_searched_for_same_shortname_in_offers_page_to_check_if_product_exist(String shortName) throws InterruptedException {
 		
 		switchToChildWindow();
-		//OfferPage offerPage=new OfferPage(textContextSetup.driver);
 		offerPage=textContextSetup.pageObjectManager.getOfferPageObject();
 		offerPage.searchInSearchField(shortName);
-	    //textContextSetup.driver.findElement(By.id("search-field")).sendKeys(shortName);
 	    Thread.sleep(2000);
 	    offerPageProductName= offerPage.getOfferPageProductName();
 	}
 	public void switchToChildWindow() {
-		//if(offerPage.getOfferPageURL().equalsIgnoreCase(offerPage.offerPageURL)) {
-		//textContextSetup.driver.findElement(By.linkText("Top Deals")).click();
+	
 		landingPage=textContextSetup.pageObjectManager.getLandingPageObject();
 		landingPage.selectTopDealsPage();
 	    textContextSetup.genericUtils.switchToChildWindow();
@@ -51,4 +49,14 @@ public class OfferPageStepDefinition2 {
 	public void compare_name_on_offerPage_LandingPage() {
 		Assert.assertEquals(textContextSetup.productPageProductName, offerPageProductName);
 	}
-}
+	
+	@Then("user should able to see 5,10,20 options in page size dropdown")
+	public void verify_options_page_size_dropdown() {
+		offerPage.verifyPageSizeOptions();
+	}
+	
+	@Then("^user click on (.+) in dropdown and able to see options in result$")
+	public void click_dropdown_and_see_results(String pageSizeCount) throws InterruptedException {
+		offerPage.clickPageSizeOptionsValidateRowsCounts(pageSizeCount);
+	}
+} 
