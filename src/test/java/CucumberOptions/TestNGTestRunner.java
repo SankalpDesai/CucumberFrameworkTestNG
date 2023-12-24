@@ -6,7 +6,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 //html reports, xml reports, json reports, junit reports, extent report
 @CucumberOptions(features="src/test/java/features", glue="stepDefinition",
- monochrome=true,tags="@OfferPage or @PlaceOrder",
+ monochrome=true,
  plugin= {"html:target/cucumber.html", "json:target/cucumber.json",
 		 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 		 "rerun:target/failed_scenarios.txt"})

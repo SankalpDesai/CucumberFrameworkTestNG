@@ -1,27 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="7" passed="5" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-21T14:39:15 IST" name="Default suite" finished-at="2023-12-21T14:39:24 IST" duration-ms="8989">
+  <suite started-at="2023-12-25T01:29:49 IST" name="Default suite" finished-at="2023-12-25T01:30:24 IST" duration-ms="35039">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.FailedTestRunner@d737b89]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNGTestRunner@d737b89]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-12-21T14:39:15 IST" name="Default test" finished-at="2023-12-21T14:39:24 IST" duration-ms="8989">
-      <class name="CucumberOptions.FailedTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:CucumberOptions.FailedTestRunner@d737b89]" started-at="2023-12-21T14:39:15 IST" name="setUpClass" finished-at="2023-12-21T14:39:16 IST" duration-ms="674" status="PASS">
+    <test started-at="2023-12-25T01:29:49 IST" name="Default test" finished-at="2023-12-25T01:30:24 IST" duration-ms="35039">
+      <class name="CucumberOptions.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:CucumberOptions.TestNGTestRunner@d737b89]" started-at="2023-12-25T01:29:49 IST" name="setUpClass" finished-at="2023-12-25T01:29:49 IST" duration-ms="785" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@e322ec9]]>
+                <![CDATA[org.testng.TestRunner@71d8cfe7]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.FailedTestRunner@d737b89]" started-at="2023-12-21T14:39:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-21T14:39:24 IST" duration-ms="7953" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNGTestRunner@d737b89]" started-at="2023-12-25T01:29:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-25T01:30:21 IST" duration-ms="31956" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check offers page page size dropdown"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Offers page dropdown and discounted items scenarios"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNGTestRunner@d737b89]" started-at="2023-12-25T01:29:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-25T01:30:19 IST" duration-ms="29266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search experience for product search in both home and offer page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search and place the order for products"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNGTestRunner@d737b89]" started-at="2023-12-25T01:29:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-25T01:30:19 IST" duration-ms="29217" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search experience for product search in both home and offer page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Place the order for products"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNGTestRunner@d737b89]" started-at="2023-12-25T01:29:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-25T01:30:19 IST" duration-ms="29659" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search experience for product search in both home and offer page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Place the order for products"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNGTestRunner@d737b89]" started-at="2023-12-25T01:29:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-25T01:30:22 IST" duration-ms="32864" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check offers page page size dropdown"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Offers page dropdown and discounted items scenarios"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNGTestRunner@d737b89]" started-at="2023-12-25T01:29:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-25T01:30:20 IST" duration-ms="30483" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check offers page page size dropdown"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Offers page dropdown and discounted items scenarios"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [20] but found [19]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [20] but found [19]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1419)
+at org.testng.Assert.assertEquals(Assert.java:1383)
+at org.testng.Assert.assertEquals(Assert.java:1429)
+at pageObjects.OfferPage.clickPageSizeOptionsValidateRowsCounts(OfferPage.java:73)
+at stepDefinition.OfferPageStepDefinition2.click_dropdown_and_see_results(OfferPageStepDefinition2.java:63)
+at ✽.user click on 20 in dropdown and able to see options in result(file:///C:/Users/Sankalp/eclipse-workspace/Cucumber_Framework/src/test/java/features/offersPageTabs.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNGTestRunner@d737b89]" started-at="2023-12-25T01:29:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-25T01:30:19 IST" duration-ms="29924" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -36,17 +151,17 @@
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [No data] but found [Cucumber]]]>
+              <![CDATA[expected [No data] but found [Beetroot]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [No data] but found [Cucumber]
+              <![CDATA[java.lang.AssertionError: expected [No data] but found [Beetroot]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at stepDefinition.OfferPageStepDefinition2.compare_name_on_offerPage_LandingPage(OfferPageStepDefinition2.java:52)
+at stepDefinition.OfferPageStepDefinition2.compare_name_on_offerPage_LandingPage(OfferPageStepDefinition2.java:53)
 at ✽.validate product name in offer page matched with landing page(file:///C:/Users/Sankalp/eclipse-workspace/Cucumber_Framework/src/test/java/features/searchProduct.feature:9)
 ]]>
             </full-stacktrace>
@@ -54,11 +169,11 @@ at ✽.validate product name in offer page matched with landing page(file:///C:/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:CucumberOptions.FailedTestRunner@d737b89]" started-at="2023-12-21T14:39:24 IST" name="tearDownClass" finished-at="2023-12-21T14:39:24 IST" duration-ms="321" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:CucumberOptions.TestNGTestRunner@d737b89]" started-at="2023-12-25T01:30:22 IST" name="tearDownClass" finished-at="2023-12-25T01:30:24 IST" duration-ms="1336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- CucumberOptions.FailedTestRunner -->
+      </class> <!-- CucumberOptions.TestNGTestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

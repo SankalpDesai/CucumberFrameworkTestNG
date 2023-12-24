@@ -35,15 +35,6 @@ public class LandingPage {
 		return driver.getTitle();
 	}
 	
-	/*public void addProductToCart(int productQuantity) throws InterruptedException {
-		
-		for(int i=1;i<productQuantity;i++) {
-			driver.findElement(incrementButton).click();
-		}
-		Thread.sleep(2000);
-		Assert.assertEquals(Integer.parseInt(driver.findElement(quantityBox).getText()), productQuantity);
-		driver.findElement(addToCartButton).click();
-	}*/
 	
 	public void incrementQuantity(int quantity) {
 		int i = quantity-1;

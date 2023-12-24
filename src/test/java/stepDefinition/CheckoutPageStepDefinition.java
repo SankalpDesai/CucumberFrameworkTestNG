@@ -31,9 +31,7 @@ public class CheckoutPageStepDefinition {
 	
 	@Then("^User proceeds to checkout and validate the (.+) items in checkout page$")
 	public void User_proceeds_to_checkout_and_validate_the_items_in_checkout_page(String veggieName) throws InterruptedException {
-		//checkoutPage=textContextSetup.pageObjectManager.getCheckoutPageObject();
 		checkoutPage.proceedToCheckout();
-		//Thread.sleep(2000);
 		Assert.assertEquals(checkoutPage.getVeggieName(), veggieName);
 	}
 	
